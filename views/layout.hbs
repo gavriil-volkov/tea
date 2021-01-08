@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <link rel="shortcut icon" href="/img/green-tea.svg" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="/js/edit.js"></script>
+
+  <title>ЧАЙ БУДЕШЬ?</title>
+</head>
+
+<body>
+  <div id="wrapper">
+  <header>
+    <a href="/"><h1>ЧАЙНЫЙ ДОМ INC.<img src="/img/green-tea.svg" alt=""></h1></a>
+    {{!-- <p>Коллекция чая со всего мира</p> --}}
+    <div id="menuWrap">
+        {{!-- <img src="" alt=""> --}}
+          {{#if user}}  <p id="greeting">Привет, <strong id="greedName">{{user}}</strong>!</p>{{/if}}
+          <ul id="menu">
+          {{!-- <li><a href="/">Главная</a></li> --}}
+          {{#if user}}
+          {{#if admin}}<li><a href="/entry">Добавить новый чай</a></li>{{/if}}
+          <li><a href="/user/logout">Выйти</a></li>
+          {{else}}
+          <li><a href="/user/sign">Регистрация</a>
+          <a href="/user/login">Войти</a></li>
+          {{!-- <li></li> --}}
+          {{/if}}
+        </ul>
+      </div>
+  </header>
+  {{!-- <img src="/img/slide.jpg" alt=""> --}}
+  {{{body}}}
+  {{#if user}}
+  <style>
+    .banner {display: none;}
+  </style>
+  {{/if}}
+  {{!-- <img  src="/img/slide.jpg" width="1200" alt=""> --}}
+  {{!-- <hr> --}}
+  <div class="banner"><h2 class="cardTitle">Коллекция чая со всего мира</h2></div>
+  <footer id="footer">© CREATE by АНДРЕЙ, ОЛЯ & ИГОРЬ - МОСКВА - 2020</footer>
+  </div>
+</body>
+
+</html>

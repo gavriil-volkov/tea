@@ -1,0 +1,35 @@
+{
+  "name": "project-chai",
+  "version": "1.0.0",
+  "description": "## Звонок от заказчика",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "express-session": "^1.17.1",
+    "hbs": "^4.1.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.10.11"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlgaGordeeva-Al/contract-project-chai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OlgaGordeeva-Al/contract-project-chai/issues"
+  },
+  "homepage": "https://github.com/OlgaGordeeva-Al/contract-project-chai#readme"
+}

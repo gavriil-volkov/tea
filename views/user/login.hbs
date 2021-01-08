@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/style.css">
+<style>
+    .banner {display: none;}
+  </style>
+<form name = "loginform" action="/user/login" method="POST">
+  <div class="container">
+    <h2>Войти</h2>
+    <p id="succ">{{message}}</p>
+    <p id="den">{{message1}}</p>
+    <p>Для входа укажите данные своей учетной записи</p>
+    <hr>
+
+    {{!-- <label for="email"><b>E-mail</b></label> --}}
+    <input type="text" placeholder="Укажите E-mail" name="email" id= "email" required>
+
+    {{!-- <label for="psw"><b>Пароль</b></label> --}}
+    <input type="password" placeholder="Укажите пароль" name="psw" id= "psw" required>
+<div><button type="submit" class="registerbtn">Войти</button></div>
+    
+  </div>
+</form>
+<div><a href="/">Вернуться на главную</a></div>

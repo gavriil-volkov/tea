@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {box-sizing: border-box; font-family: 'Montserrat', sans-serif; outline: none; font-size: 16px; text-decoration: none;}
+
+body, html {
+  width: 100%; height: 100%; padding: 0%; margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a h1 {color: #000000}
+
+header h1 {
+  margin-bottom: 0;
+}
+
+.banner {    
+  width: 1200px;
+  height: 500px;
+  background-image: url(/img/slide.jpg);
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+#menuWrap {    
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  margin-top: 15px;
+
+}
+
+#wrapper {max-width: 1200px; margin: 0 auto; padding: 25px;}
+
+#footer {padding: 25px 0; margin-top: 50px;}
+
+#map {width: 50%; height: 50%; padding: 0%;}
+
+ul#menu li {display: inline;}
+
+ul#teaList li {display: inline;}
+
+#uploadFile {padding-top: 50px;}
+
+#entryImg {filter: brightness(1.03); width: 50%;}
+#editImg {filter: brightness(1.03); width: 15%; padding: 25px 0;}
+
+ul#menu a{
+  display: inline;
+  background-color: #4CAF50;
+  /* border-radius: 5px; */
+  color: white;
+  padding: 10px 15px;
+  margin: 5px 0;
+  /* border: none; */
+  cursor: pointer;
+  width: 50%;
+  opacity: 1;
+  text-transform: uppercase;
+  /* font-size: 19px; */
+  text-decoration: none;
+  
+}
+
+#deleteButton {
+  margin-top: 25px;
+    border: none;
+    padding: 16px 20px;
+    /* padding: 10px; */
+    /* border-radius: 5px; */
+    background-color: #e22727;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#breadCrumbs {
+  font-size: 19px;
+}
+
+#addComment {
+  margin-top: 15px;
+    border: none;
+    /* padding: 15px; */
+    /* border-radius: 5px; */
+    background-color: #2876ad;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 16px 20px;
+}
+
+ul#teaList p{
+  width: 100%;
+  /* height: 100%; */
+  color: white;
+  text-decoration: none;
+  padding: 25px 35px;
+  background-color: #4caf4fe1;
+  /* border-radius: 5px; */
+}
+
+img.previewImg {width: 30px}
+
+.cardTitle {
+  width: 100%;
+    color: white;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 25px 35px;
+    /* background-color: #00000073; */
+    text-align: center;
+    vertical-align: middle;
+    padding: 5% 0;
+    font-size: 50px;
+}
+
+ul#teaList li{
+  display: flex;
+  background-color: #4CAF50;
+  align-items: center;
+  /* border-radius: 5px; */
+  width: 350px;
+  height: 250px;
+  padding: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* border: 3px solid #4CAF50; */
+  /* margin: 5px 0; */
+  /* border: none; */
+  cursor: pointer;
+  text-align: center;
+  /* width: 50%; */
+  opacity: 1;
+  text-transform: uppercase;
+  font-size: 19px;
+}
+
+  ul#menu a:hover {
+    background-color: #339b36;
+  }
+
+#menu {padding: 0; margin-bottom: 25px;}
+#teaList {padding: 0; margin-bottom: 25px; width: 100%;  margin: 50px 0; display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;}
+
+h1 {text-transform: uppercase; font-size: 40px; font-family: 'Montserrat', sans-serif; font-weight: 500;}
+h2 {text-transform: uppercase; font-size: 30px; font-family: 'Montserrat', sans-serif; font-weight: 500;}
+h3, #greeting {font-size: 20px; font-family: 'Montserrat', sans-serif; font-weight: 500;}
+
+#greedName {color: #4CAF50; font-size: 25px;}
+
+p, label {font-size: 15px;}
+/* Add padding to containers */
+.container {
+  padding: 15px 0;
+}
+
+b {font-size: 19px;}
+/* Full-width input fields */
+input[type=text], input[type=email], input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 25px 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  font-family: 'Montserrat', sans-serif;
+  /* border-radius: 5px; */
+  
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  /* border-radius: 5px; */
+  
+}
+
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+    margin: 25px 0;
+    width: 100%;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 15px 0;
+  border: none;
+  cursor: pointer;
+  /* width: 25%; */
+  opacity: 1;
+  text-transform: uppercase;
+  /* font-size: 19px; */
+  /* border-radius: 5px; */
+}
+
+.teaCardBlock {
+  margin-bottom: 15px;
+}
+
+#succ {
+  font-size: 30px;
+  color: #4CAF50;
+}
+
+#den {
+  font-size: 30px;
+  color: #e22727;
+}
+
+
+
+.registerbtn:hover {
+  background-color: #339b36;
+}
+
+/* Add a blue text color to links */
+a {
+  color: #2876ad;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.commentDate {font-size: 13px; color: rgba(0, 0, 0, 0.7)}
+
+#cultivation {color: #339b36; font-size: 25px; font-weight: normal;}
+
+#deleteBlock {display: none;}
+
+#deleteEntry {margin-top: 15px;}
+
+#noButton {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#yesButton {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 0;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+
+.ymaps-2-1-77-copyright {display: none;}
+.ymaps-2-1-77-copyright__content-cell {display: none!important;}
+.ymaps-2-1-77-controls__control_toolbar {display: none!important;}
+/* .ymaps-2-1-77-controls__control {display: none!important;} */
+.ymaps-2-1-77-map-copyrights-promo {display: none!important;}
+
+
+
+#editButton {
+  
+}

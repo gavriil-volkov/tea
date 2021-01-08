@@ -1,0 +1,66 @@
+<script defer src="/js/delete_entry.js"></script>
+{{!-- <script defer src="/js/edit.js"></script> --}}
+<script defer src="/js/add_comment.js"></script>
+<hr>
+<div><a id="breadCrumbs" href="/">Вернуться на главную</a></div>
+<div>
+  <h2>{{entry.title}} 🌱</h2>
+</div>
+<div>
+  <p>{{entry.description}}</p>
+</div><br>
+<img id="entryImg" src="{{entry.file}}">
+<div>
+  <h3>Место культивации: <span id="cultivation">{{entry.location}}</span></h3>
+</div>
+
+<a href="/getentry/{{ entry.id }}" id="editButton">Редактировать запись</a>
+
+{{#if admin}}<div id="uploadFile">
+  <form ref='uploadForm' id='uploadForm' action='/entry/photo/{{entry._id}}' method='POST'
+    encType="multipart/form-data">
+    <input type="file" name="sampleFile" />
+    <div><input type='submit' class="registerbtn" value='Загрузить изображение' /></div>
+  </form>
+</div>{{/if}}
+
+
+
+{{!-- <div id="cont1"></div> --}}
+
+<div id="addNewComments">
+  <div>
+    <button id="addComment">Добавить комментарий</button>
+  </div>
+  <div>
+    <form id="addForm" style="display: none;">
+      <input name="comment" id="comment" type="text">
+      <input style="display: none" name="entryId" value={{entry._id}}></input>
+
+      <button class="registerbtn" type="submit" id="comment_button">Оставить комментарий</button>
+
+    </form>
+  </div>
+  {{#if comments}}
+  <h3>Комментарии:</h3>
+  <ul>
+    {{#each comments}}
+    <li><b>{{this.author}}</b>
+      <p>{{this.body}}</p>
+      <p class="commentDate">{{this.createdAt}}</p>
+    </li>
+    {{/each}}
+  </ul>
+  {{/if}}
+  {{#if admin}}
+  <button id="deleteButton" type="submit">Удалить запись</button>
+  <div id="deleteBlock">
+    <form id="deleteEntry">
+      <input style="display: none" name="entryId" value={{entry._id}}></input>
+      <p="deletePost">Внимание! Запись будет удалена безвозвратно. Продолжить?</p>
+        <button id="yesButton" type="submit">Да</button>
+        <a id="noButton">Нет</a>
+    </form>
+  </div>
+  {{/if}}
+</div>
