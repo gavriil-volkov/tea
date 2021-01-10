@@ -42,8 +42,8 @@ router.put('/:id', async (req, res, next) => {
   const entry = await Entry.findById(id);
   entry.title = req.body.title;
   entry.description = req.body.description;
-  entry.location = req.body.location;
-  entry.coordinates = req.body.coordinates;
+  // entry.location = req.body.location;
+  // entry.coordinates = req.body.coordinates;
   await entry.save();
 
   res.end();

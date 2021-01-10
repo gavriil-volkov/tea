@@ -14,9 +14,10 @@
   <h3>Место культивации: <span id="cultivation">{{entry.location}}</span></h3>
 </div>
 
-<a href="/getentry/{{ entry.id }}" id="editButton">Редактировать запись</a>
+{{#if admin}}
+{{!-- <a href="/getentry/{{ entry.id }}" id="editButton">Редактировать запись</a> --}}
 
-{{#if admin}}<div id="uploadFile">
+<div id="uploadFile">
   <form ref='uploadForm' id='uploadForm' action='/entry/photo/{{entry._id}}' method='POST'
     encType="multipart/form-data">
     <input type="file" name="sampleFile" />

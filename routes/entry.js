@@ -46,7 +46,7 @@ router.post('/photo/:id', async (req, res) => {
   // console.log(sampleFile.name, ' ------>');
   await entry.save();
   // Use the mv() method to place the file somewhere on your server
-  await sampleFile.mv(`/Users/gavriilvolkov/volki/p2w2/contract-project-chai/public/img/${sampleFile.name}`, (err) => {
+  await sampleFile.mv(`./public/img/${sampleFile.name}`, (err) => {
     if (err) return res.status(500).send(err);
 
     res.redirect(`/card/${entry._id}`);
