@@ -37,3 +37,9 @@
 # Preview проекта
 
 ![screenshot](Desktop-1610313986241.gif)
+
+### `Авторы проекта`
+
+- Views, Routes - [Игорь Волков](https://github.com/gavriil-volkov), [Ольга Гордеева](https://github.com/OlgaGordeeva-Al)
+- Работа с Яндекс API - [Андрей Коваленко](https://github.com/andrewcova)
+- Верстка - [Игорь Волков](https://github.com/gavriil-volkov)
